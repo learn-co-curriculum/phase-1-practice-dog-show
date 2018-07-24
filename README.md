@@ -11,7 +11,7 @@ npm install -g json-server
 
 Then run the server with:
 ```bash
-json-server db.json
+json-server --watch db.json
 ```
 
 This will serve your code on http://localhost:3000.

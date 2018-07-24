@@ -23,4 +23,9 @@ This will serve your code on http://localhost:3000.
 - On submit of the form, a PATCH request should be made to http://localhost:3000/dogs/:id to update the dog information.
 - The dog should have name, breed and sex attributes.
 
+### Example
+The below gif demonstrates the working functionality of the app.
+
+![app](assets/app.gif)
+
 ![dog](assets/dog-show.jpg)

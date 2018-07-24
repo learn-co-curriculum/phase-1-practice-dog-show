@@ -40,7 +40,17 @@ class DogController {
       sex: e.target.sex.value
     }
     Adapter.editDog(data)
+      .then(DogController.updateRow)
     e.target.reset()
     e.target.dataset.id = ''
+  }
+
+  static updateRow(dog) {
+    const name = document.querySelector(`#dog-${dog.id} .name`)
+    name.innerText = dog.name
+    const breed = document.querySelector(`#dog-${dog.id} .breed`)
+    breed.innerText = dog.breed
+    const sex = document.querySelector(`#dog-${dog.id} .sex`)
+    sex.innerText = dog.sex
   }
 }

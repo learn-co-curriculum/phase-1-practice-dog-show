@@ -22,7 +22,6 @@ This will serve your code on http://localhost:3000.
 - The dog should be put on the table as a table row. The HTML might look something like this `<tr><td>Dog *Name*</td> <td>*Dog Breed*</td> <td>*Dog Sex*</td> <td><button>Edit</button></td></tr>`
 - Make a dog editable. Clicking on the edit button next to a dog should populate the top form with that dog's current information.
 - On submit of the form, a PATCH request should be made to http://localhost:3000/dogs/:id to update the dog information (including name, breed and sex attributes).
-g
 - In order to locate one row on the DOM and update specific data cells within it, you may need to assign id and or class values to locate each attribute.
 
 ### Example

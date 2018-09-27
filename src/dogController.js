@@ -7,6 +7,8 @@ class DogController {
   }
 
   static renderDogs(dogs) {
+    const table = document.querySelector('#table-body')
+    table.innerHTML = ''
     dogs.forEach(DogController.renderDog)
   }
 
@@ -40,17 +42,9 @@ class DogController {
       sex: e.target.sex.value
     }
     Adapter.editDog(data)
-      .then(DogController.updateRow)
+      .then(Adapter.getDogs)
+      .then(DogController.renderDogs)
     e.target.reset()
     e.target.dataset.id = ''
-  }
-
-  static updateRow(dog) {
-    const name = document.querySelector(`#dog-${dog.id} .name`)
-    name.innerText = dog.name
-    const breed = document.querySelector(`#dog-${dog.id} .breed`)
-    breed.innerText = dog.breed
-    const sex = document.querySelector(`#dog-${dog.id} .sex`)
-    sex.innerText = dog.sex
   }
 }

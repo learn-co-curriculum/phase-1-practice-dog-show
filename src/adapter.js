@@ -14,7 +14,6 @@ class Adapter {
   static editDog(data) {
     const url = `http://localhost:3000/dogs/${data.id}`
     delete data.id
-    console.log(data);
     const options = {
       method: "PATCH",
       headers: {

@@ -1,5 +1,14 @@
 # Additional Practice: Westminster Kennel Club Dog Show
 
+## Learning Goals
+
+- Access information from an API using a GET request and use it to update the
+  DOM
+- Listen for user events and update the DOM in response
+- Send data to an API using a PATCH request
+
+## Introduction
+
 You are responsible for managing the website for the Westminster Kennel Club Dog
 Show. These dog owners are _very_ competitive. We need to make sure that they
 can view all the competition (the other dogs) and edit their dog's information.
